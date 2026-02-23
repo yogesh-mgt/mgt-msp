@@ -1,0 +1,9 @@
+/var/*
+!/var/.htaccess
+/pub/media/*
+!/pub/media/.htaccess
+!/pub/media/theme-custom/
+/pub/static/*
+!/pub/static/.htaccess
+/app/etc/env.php
+/generated/*
