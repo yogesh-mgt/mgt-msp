@@ -1,0 +1,2 @@
+<?php
+ namespace Mgt\Waf\Model\Util; class Retry { public static function retry(callable $fn, $retries = 2, $delay = 3) { beginning: try { return $fn(); } catch (\Exception $e) { goto Abf29; C4e8d: goto beginning; goto B678d; Abf29: if ($retries) { goto a0092; } goto Af2aa; E27d5: sleep($delay); goto C00a5; C00a5: dfba4: goto C4e8d; Af2aa: throw $e; goto Afe15; Afe15: a0092: goto f76b3; Ecbb7: if (!$delay) { goto dfba4; } goto E27d5; f76b3: $retries--; goto Ecbb7; B678d: } } }
